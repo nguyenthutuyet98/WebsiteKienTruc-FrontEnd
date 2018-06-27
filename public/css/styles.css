@@ -1,0 +1,700 @@
+/*---------------------header: Dau trang web------------------*/
+.theselectionbar{
+	background-color: none;
+}
+.function>ul>li{
+	display: inline-table;
+	padding: 10px;
+}
+.function{
+	display: inline-block;
+}
+.function span{
+  cursor: pointer;
+  color: #8c8c8c;
+}
+.function span:hover{
+  color: #000;
+}
+.function i{
+  color: #4eccb9;
+}
+.pull-right>ul>li{
+	display: inline-table;
+	padding: 10px;
+}
+.nav-border{
+	border-top:1px solid #4eccb9;
+	width:20px;
+	margin:13px;
+}
+.social li{
+  border: 1px solid #e7e7e7;
+  width: 40px;
+  border-radius: 50%;
+}
+.social li:hover{
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+/*---------------------------------------------------Phan Than ------------------------------------------------*/
+body{
+  margin:  0 auto;
+  padding: 0 auto;
+  background-color: none;
+}
+/*-------------------slider----------------------*/
+.main-slider{
+	background-color: none;
+}
+.slideshow-one{
+  background: url(../images/slide1.jpg);
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  visibility: inherit;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+/*slide-one*/
+#textbox{
+  margin-top: 90px;
+  margin-left: 300px;
+  font-size: 40px;
+  color: #fff;
+  background: #000;
+  border: 1px solid #000;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 12px;
+}
+#textbox-blue{
+  color: #fff;
+  background: #4eccb9;
+  border: 1px solid #4eccb9;
+  border-radius: 10px;
+  font-size: 20px;
+  display: inline-block;
+  padding: 26px;
+  margin-left: 300px;
+}
+/*---------------Nut button---------*/
+.btn-default{
+    display: inline-block;
+    color: #000;
+    text-shadow: 0 0 2px rgba(0,0,0,.3);
+    font-family: sans-serif;
+    box-shadow:
+        inset 0 0 2px 0 rgba(255,255,255,.4),
+        inset 0 0 3px 0 rgba(0,0,0,.4),
+        inset 0 0 3px 5px rgba(0,0,0,.05),
+        4px 4px 4px 4px rgba(0,0,0,.25);
+    border-radius: 4px;
+    padding: 10px;;
+    font-size: 25px;
+    position: relative;
+    width: 200px;
+    height: 80px;
+    margin-left: 300px;
+}
+.btn-default:hover{
+  background: #fff;
+  color: orange;
+}
+.btn-default:before, .btn-default:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 2px;
+    right: 2px;
+    height: 3px;
+}
+.btn-default:before {
+    top: 0;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background: rgba(255,255,255,.6);
+    box-shadow: 0 1px 2px 0 rgba(255,255,255,.6);
+}
+.btn-default:after {
+    bottom: 0;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background: rgba(0,0,0,.15);
+    box-shadow: 0 -1px 2px 0 rgba(0,0,0,.15);
+}
+/*Hinh anh */
+.photo{
+  margin-left: 800px;
+  margin-top: -350px;
+}
+/*---------slidemain-two----------*/
+.slideshow-two{
+  background-image: url(../images/slide3.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 40px;
+  padding-top: 20px;
+}
+.slide-two{
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+.slide-two h2{
+  font-size: 40px;
+}
+.text-slidetwo span{
+  padding-left: 60px;
+}
+.icon-slidetwo img{
+  margin-left: 50px;
+  margin-bottom: 40px;
+}
+/*--------------slideshow-three----------*/
+.slideshow-three{
+  background-image: url(../images/slide2.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 100%;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.text-video{
+  margin-left: 200px;
+}
+.textboxwhite{
+  margin-left: 200px;
+}
+.video-slide h1{
+  font-size: 60px;
+  color: #fff;
+}
+.textboxwhite h3{
+  border: 1px solid #fff;
+  background: #fff;
+  display: inline-block;
+  padding: 10px;
+}
+
+/*------------------------description table: Bang mo ta------------------*/
+.descriptiontable{
+	
+}
+.row-header{
+	background-color: none;
+}
+
+.row-mid{
+	background-color: none;
+}
+
+.row-footer{
+	background-color: none;
+}
+.icon-round{ 
+  position: absolute;
+  font-size: 30px;
+  border:1px solid #4eccb9;
+  color: #4eccb9;
+  background: #fff;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  display: block;
+ 
+  border-radius: 50%;
+  margin-top: -45px;
+  top: 50%;
+  right: -30px;
+}
+.icon-round:hover{
+  border: 1px solid #fff;
+  background: #4eccb9;
+  color: #fff;
+}
+.feature-box{
+  position: relative;
+  margin-bottom: 20px;
+}
+.feature-text{
+  border-radius: 5px;
+  padding: 35px;
+  width: 100%;
+  background: #4eccb9; 
+}
+.feature-text h4{
+  font-size: 20px;
+  margin: 0px;
+  margin-bottom: 17px;
+  color: #fff;
+}
+.feature-text p{
+  color: #fff;
+}
+/*---------------------------slide-show-------------------------*/
+.slide-show{
+	background-color: none;
+  text-align: center;
+}
+.row{
+  margin-top: 40px;
+}
+.slider img{
+  width: 359px;
+  height: auto;
+}
+
+.slick-dots {
+  text-align: center;
+  margin: 0 0 10px 0;
+  padding: 0;
+  li {
+    display:inline-block;
+    margin-left: 4px;
+    margin-right: 4px;
+    &.slick-active {
+      button {
+        background-color:black;
+      }
+    }
+    button {
+      font: 0/0 a;
+      text-shadow: none;
+      color: transparent;
+      background-color:#999;
+      border:none;
+      width: 15px;
+      height: 15px;
+      border-radius:50%;
+    }
+    :hover{
+      background-color: black;
+    }
+  }
+}
+/* Custom Arrow */
+.previous{
+  color: #fff;
+  position: absolute;
+  top: 38%;
+  left: 165px;
+  font-size: 1.5em;
+    :hover{
+      cursor: pointer;
+      color: black;
+    }
+}
+.nextto{
+  color: #fff;
+  position: absolute;
+  top: 38%;
+  right: -2em;
+  font-size: 1.5em;
+  :hover{
+      cursor: pointer;
+      color: black;
+    }
+}
+@media screen and (max-width: 800px) {
+    .next {
+        display: none !important;
+    }
+}
+
+/*---------------------whychoose--------------------------*/
+.whychoose{
+  vertical-align: baseline;
+  position: relative;
+	background-color: none;
+}
+.whychoose-box{
+  margin-bottom: 20px;
+}
+.clear{
+  clear: both;
+}
+.dark{
+  margin-top: 40px;
+}
+.wrapper{
+  text-align: center;
+}
+.incon-box{
+	border: 1px solid #e2e2e2;
+	display: inline-block;
+  font-size: 20px;
+  color: #000;
+  padding: 15px;
+  position: relative;
+  float: left;
+
+}
+.w-descr{
+  font-size: 15px;
+  color: #000;
+  padding: 9.5px;
+  display: inline-block;
+  border: 1px solid #e2e2e2;
+  border-left: none;
+  background: #f0f0f0;
+  float: left;
+} 
+
+/*-----------*/
+
+.incon-box>span>i{
+  display: block;
+  width: 52px;
+  height:52px;
+  line-height: 32px;
+  text-align: center;
+  float: left;
+  border-radius: 50%;
+  padding: 10px;
+  background: #d0d0d0;
+  color: #fff;
+}
+.incon-box p{
+  float: left; 
+  padding-top: 13px;
+  padding-left: 10px;
+}
+.w-descr{
+  padding-top: 32px;
+  padding-bottom: 19px;
+}
+.incon-box:after{
+  content: "";
+  position: absolute;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 8px solid #4eccb9;
+  right: -8px;
+  top: 50%;
+  margin-top: -11px;
+}
+.incon-box i:hover{
+  background: #4eccb9;
+  color: #fff;
+  transition: 0.3s;
+  transform: rotateY(720deg);
+}
+/*---------------------testimonials-------------------*/
+.testimonials{
+	background-color: none;
+  text-align: center;
+  border-top: 1px solid #eee;
+}
+.content-testimonials img{
+  margin-top: 40px;
+  padding: 10px;
+  border-style: double;
+  border: 1px solid #000;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  width: 40px;
+}
+.content-testimonials p{
+  font-size: 18px;
+  line-height: 24px;
+}
+.content-testimonials span{
+  color: #000;
+  display: block;
+  padding-bottom: 20px;
+
+}
+.img{
+  border-radius: 50%;
+}
+.test-border{
+  width: 110px;
+  margin: 20px auto;
+  border-top: 1px solid #000;
+}
+/*Chuyen hinh anh ong gia*/
+/* định dạng các chấm chuyển đổi các slide */
+.button-all{
+  position: absolute;
+  margin-top: -380px;
+  margin-left: 850px;
+}
+.round-button {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+/* khi được hover, active đổi màu nền */
+.active, .round-button:hover {
+  background-color: #4eccb9;
+}
+ 
+/* Thêm hiệu ứng khi chuyển đổi các slide */
+.content-testimonials{
+  -webkit-animation-name: cover;
+  -webkit-animation-duration: 3s;
+  animation-name: cover;
+  animation-duration: 3s;
+}
+ 
+@-webkit-keyframes cover {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+ 
+@keyframes cover {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+ /*-------------------------founder------------------*/
+ .founder{
+ 	background-image: url(../images/hinhve.jpg);
+  text-align: center;
+ }
+ .slide{
+  text-align: left;
+  margin-left: 20px;
+ }
+ .team-mates img{
+  width: 100%;
+  height: 100%;
+ }
+
+.additionalicons i{
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  font-size: 15px;
+  padding: 10px;
+  color: #fff;
+
+}
+.additionalicons i:hover{
+  background: #000;
+  color: #fff;
+  border: 1px solid #000;
+  transition: 0.3s;
+  transform: rotateZ(360deg);
+}
+.additionalicons{
+  padding: 5px 0px 0px 5px;
+  height: 50px;
+  background-color: #4ECCB9;
+}
+.team-descr h3,h5{
+  padding-left: 30px;
+}
+/*---------- Nut chuyen trang cua founder ------------------*/
+
+
+ /*-----------------------------recent-posts-----------*/
+ .recent-posts{
+ 	background-color: none;
+  text-align: center;
+  height: 600px;
+ }
+ .img-recent img{
+  width: 263px;
+  overflow: hidden;
+  cursor: pointer;
+ }
+ .all-text{
+  text-align: left;
+ }
+ .paraghrap{
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  padding: 20px;
+ }
+ .date-comment{
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  padding: 20px;
+ }
+ /*---Slide show cua recent-post----*/
+ .prev{
+  position: absolute;
+  border: 1px solid #4eccb9;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  margin-top: -530px;
+  font-size: 20px;
+  margin-right: 988px;
+  right: -70px;
+ }
+ .next{
+  position: absolute;
+  margin-left: 888px;
+  border: 1px solid #4eccb9;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  margin-top: -530px;
+  font-size: 20px;
+ }
+ /*------------------------------------icon-info: Thong Tin Lien He- -----------------------*/
+ .icon-information{
+  height: 45px;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+ }
+ .triangle{
+  /*position: absolute;*/
+  position: relative;
+  display: inline-block;
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+  border-bottom: 45px solid #000;
+  text-align: center;
+ }
+ .triangle>i{
+  color: #fff;
+  font-size: 25px;
+  position: absolute;
+  left: -11px;
+  top: 12px;
+ }
+ .content-information{
+  display: none;
+  border: 1px solid #383E42;
+  background-color: #383E42;
+  color: #fff;
+  padding: 10px 43px 0px 43px;
+  margin-left: 515px;
+  font-size: 20px;
+  text-align: center;
+
+ }
+ .content-testimonials p {
+  text-align: center;
+ }
+ .content-information i{
+  padding-right: 10px;
+ }
+ .content-information a{
+  text-decoration: none;
+  color: #fff;
+ }
+ /*----------------------contact-imformation---------------*/
+.contact-imformation{
+	background-color: #4C545A;
+  color: #fff;
+  padding-bottom: 40px;
+}
+.popular-tags{
+  border: 1px solid #434b51;
+  display: inline-block;
+  font-size: 10px;
+  padding: 6px;
+  border-radius: 10%;
+  margin: 3px;
+  cursor: pointer;
+}
+.popular-tags:hover{
+  border-color: #fff;
+}
+.input-group{
+  width: 200px;
+}
+#btnsubmit{
+  background: #000;
+  border-radius: 7px;
+  color: #fff;
+  border-color: #000;
+}
+img{
+  padding-top: 30px;
+}
+ul{
+  padding-left: 5px;
+}
+.content p{
+  margin-top: 15px;
+  border-top: 1px solid #444b51;
+  border-bottom: 1px solid #444b51;
+  padding: 10px 0 10px 0;
+  color: #b3b3b3;
+}
+.content-post>ul{
+  color: #b3b3b3;
+  line-height: 40px;
+}
+.content-post li:hover{
+  color: #b3b3b3;
+  cursor: pointer;
+}
+.content-post, .content-tags{
+  border-bottom: 1px solid #444b51;
+  padding-bottom: 10px;
+}
+.content-signup p{
+  font-size: 13px;
+}
+#email{
+  background: #4C545A;
+  border-color: #000;
+  color: #fff;
+}
+#email:hover{
+  border: 4px solid #009bf4;
+}
+
+/*------------------------------------------footer: Cuoi trang-------------------------------------------------------------*/
+#footer{
+	background-color: #4eccb9 ;
+  height: 100px;
+  vertical-align: baseline;
+}
+
+.wrapper{
+  position: relative;
+  padding: 30px 0px;
+}
+
+.copyrigt{
+  float: left;
+  font-weight: 300px;
+  color: #fff;
+  font-size: 15px;
+  padding-top: 10px;
+  vertical-align: baseline;
+}
+.icon i{
+  color: #fff;
+}
+.icon{
+  border: 1px solid #fff;
+  color: #fff;
+  width: 40px;
+  border-radius: 50%;
+}
+
+#back-to-top{
+  cursor: pointer;
+  
+  position: absolute;
+  right: 50%;
+  color: #fff;
+  font-size: 50px;
+  vertical-align: baseline;
+}

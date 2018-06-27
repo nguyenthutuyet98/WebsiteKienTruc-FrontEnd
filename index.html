@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> DO AN TKW - Nguyen Thu Tuyet</title>
+	<meta class="viewport" content="width=device-width, initial-sacle=1">
+	<link rel="stylesheet" type="text/css" href="public/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="public/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="public/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="public/css/slick.css">
+	<link rel="stylesheet" type="text/css" href="public/css/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="public/css/styles.css">
+	<script type="text/javascript" src="public/js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="public/js/slick.min.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function () {
+			var currentStatus = 1; // 0 la an, 1 la hien
+
+			$(".whychoose-box").hover(function () {
+				console.log("asfsad");
+				$(".w-descr").css("background", "#4eccb9");
+
+				$(".w-descr>span>i").css({"background" : "#4eccb9", 
+					"transition" : "0.4s",
+					"transform" : "rotateY(720deg)"
+				});
+
+				$(".incon-box:after").css("border-left", "8px solid #fff");
+			});
+
+			$(".icon-information").click(function() {
+				if (currentStatus == 0)
+				{
+					// $(".content-information").css("display", "none");
+					$(".content-information").slideUp();
+					currentStatus = 1;
+				}
+				else
+				{
+					// $(".content-information").css("display", "inline-block");
+					$(".content-information").slideDown();
+					$(".content-information").css("display", "inline-block");
+					currentStatus = 0;
+				}
+			});
+		});
+	</script>
+</head>
+<body>
+	<!-- header: Dau trang website -->
+	<div id="header">
+		<div class="container">
+			<div class="theselectionbar" style="height: 40px"> <!--Thanh chon-->
+				<div class="function">
+					<ul>
+						<li><span><i class="fa fa-caret-square-o-right" aria-hidden="true"></i>term conditions</span></li>
+						<li><span>about us</span></li>
+						<li><span><i class="fa fa-caret-square-o-right" aria-hidden="true"></i>login</span></li>
+						<li><span><i class="fa fa-caret-square-o-right" aria-hidden="true"></i>contact us</span></li>
+					</ul>
+				</div>
+				<div class="social pull-right">
+					<ul>
+						<li><span><i class="icon-google-plus"></i></span></li>
+						<li><span><i class="icon-twitter"></i></span></li>
+						<li><span><i class="icon-pinterest"></i></span></li>
+						<li><span><i class="icon-dribbble"></i></span></li>
+						<li><span><i class="icon-linkedin-sign"></span></i></li>
+						<li><span><i class="icon-facebook"></i></span></li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+		<div class="menu" style="height: 100px">
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#"><img src="public/images/logo.png" alt="logo" class="img-responsive"></a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse navbar-ex1-collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li>
+								<a href="#">
+									<div class="main-a">HOME</div>
+									<div class="nav-border"></div>
+									<div class="span-a">start here</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="main-a">ABOUT</div>
+									<div class="nav-border"></div>
+									<div class="span-a">Who we are</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="main-a">PORTFOLIO</div>
+									<div class="nav-border"></div>
+									<div class="span-a">our work</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="main-a">SERVICES</div>
+									<div class="nav-border"></div>
+									<div class="span-a">what we offer</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="main-a">NEWS</div>
+									<div class="nav-border"></div>
+									<div class="span-a">fresh news</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="main-a">CONTACT</div>
+									<div class="nav-border"></div>
+									<div class="span-a">get in touch</div>
+								</a>
+							</li>
+
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div>
+			</nav>
+		</div>
+	</div>
+	<div class="main-slider">
+		<div class="slideshow-one sliders">
+			<!-- slide-main one -->
+			<div class="slide-one">
+				<div id="textbox">Welcome to our Website </div><br><br>
+				<div id="textbox-blue">We are the Architects </div><br><br>
+				<button type="button-learnmore" class="btn btn-default"><i class="fa fa-arrow-circle-right" aria-hidden="true " id="icon-bt"></i>Learn More</button>
+				<div class="photo"><img src="public/images/sketch.png" alt=""></div>
+
+			</div>
+		</div>
+		<div class="slideshow-two sliders">
+			<!-- slide-main two -->
+			<div class="slide-two">
+				<h2>Creative Architecture Template for you Company</h2> <br><br><br>
+				<p>Well Organised Layers</p>
+				<div class="icon-slidetwo">
+					<span><img src="public/images/icon1.png" alt=""></span>
+					<span><img src="public/images/icon2.png" alt=""></span>
+					<span><img src="public/images/icon3.png" alt=""></span>
+					<span><img src="public/images/icon3.png" alt=""></span>
+					<div class="text-slidetwo">
+						<span>update
+							
+						</span>
+						<span>
+							typhography
+							
+						</span>
+						<span>
+							unlimited
+
+						</span>
+						<span>
+							unlimited
+
+						</span>
+					</div>
+					<div class="text-slidetwo">
+						<span>
+							notification
+						</span>
+						<span>
+							setting
+						</span>
+						<span>
+							ntttttttportfolios
+						</span>
+						<span>
+							ntttttttportfolios
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="slideshow-three sliders">
+			<!-- slide-main three -->
+			<div class="slide-three">
+				<div class="row">
+					<div class="col-md-6 video-slide">
+						<h1 class="text-video">Youtube & Video Support</h1>
+						<div class="textboxwhite"><h3>Put any custom background</h3></div>
+						<button type="button-three" class="btn btn-default"><i class="fa fa-arrow-circle-right" aria-hidden="true" id="icon-bt"></i>Learn More</button>
+					</div>
+					<div class="col-md-6 video-slide">
+						<iframe width="500" height="300" src="https://www.youtube.com/embed/YE7VzlLtp-4" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+		<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+		<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+	</div>
+	<!-- description table: Bang mo ta  -->
+	<div class="container">
+		<div class="descriptiontable">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="row-header">
+						<div class="feature-box"> <!--Hop tinh nang(Tai su dung)-->
+							<div class="feature-text"> <!--Tinhnang-vanban(Tai su dung)-->
+								<h4>Architecture Design</h4>
+								<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem.</p>
+								<span class="icon-round"><i class="fa fa-pencil-square" aria-hidden="true"></i></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--  -->
+				<div class="col-md-4">
+					<div class="row-mid">
+						<div class="feature-box"> 
+							<div class="feature-text"> 
+								<h4>Building Contracts</h4>
+								<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem.</p>
+								<span class="icon-round"><i class="fa fa-files-o" aria-hidden="true"></i></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--  -->
+				<div class="col-md-4">
+					<div class="row-footer">
+						<div class="feature-box"> 
+							<div class="feature-text"> 
+								<h4>Building Surveys</h4>
+								<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem.</p>
+								<span class="icon-round"><i class="fa fa-check-square-o" aria-hidden="true"></i></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--  -->
+			</div>
+		</div>
+	</div>
+	<!-- slide-show -->
+	<div class="slide-show" style="">
+		<h3 class="main-title">Recent work</h3>
+		<span class="main-subtitle">some handpicked projects we’ve done</span>
+		<div class="row">
+			<div class="col-md-12 heroSlider-fixed">
+				
+				<!-- Slider -->
+				<div class="slider responsive">
+					<!-- <ul class="image-slider"> -->
+						<img class="img-workplace-slider" src="public/images/h6.jpg" alt="">
+						<img class="img-workplace-slider" src="public/images/h3.jpg" alt="">
+						<img class="img-workplace-slider" src="public/images/h7.jpg" alt="">
+						<img class="img-workplace-slider" src="public/images/h14.jpg" alt="">
+						<img class="img-workplace-slider" src="public/images/h2.jpg" alt="">
+						<img class="img-workplace-slider" src="public/images/hthap.jpg" alt="">
+						<img class="img-workplace-slider" src="public/images/h11.jpg" alt="">
+						<img class="img-workplace-slider" src="public/images/h1.jpg" alt="">
+						<img class="img-workplace-slider" src="public/images/h4.jpg" alt="">
+						<img class="img-workplace-slider" src="public/images/hthap.jpg" alt="">
+						<img class="img-workplace-slider" src="public/images/h1.jpg" alt="">
+						<!-- </ul> -->
+						
+						<!-- control arrowas -->
+						<div class="prev">
+							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						</div>
+						<div class="next">
+							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true">	</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--whychoose-->
+		<div class="container">
+			<div class="whychoose" style="height: 500px">
+				<div class="wrapper">
+					<h3 class="main-title">
+						Why Choose Metrical Theme ?
+					</h3>
+					<span class="main-subtitle">some reasons why you should choose Metrical for your next project</span>
+				</div>
+				<div class="dark">
+					<div class="col-md-3">
+						<img src="public/images/choose.jpg" alt="choose">
+					</div>
+					<div class="col-md-9">
+						<div class="whychoose-box">
+							<div class="incon-box">
+								<span><i class="fa fa-cogs" aria-hidden="true"></i></span>
+								<p>Font-Awesome Icons</p>
+							</div>
+							<div class="w-descr">
+								<p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh velS</p>
+							</div>
+
+							<div class="clear">&nbsp;</div>
+						</div>
+						<!--  -->
+						<div class="whychoose-box">
+							<div class="incon-box">
+								<span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+								<p>Working Contact form</p>
+							</div>
+							<div class="w-descr">
+								<p>Quis bibendum auctor, nisi elit consequat ipsum, nec sagittis</p>
+							</div>
+
+							<div class="clear">&nbsp;</div>
+						</div>
+						<!--  -->
+						<div class="whychoose-box">
+							<div class="incon-box">
+								<span><i class="fa fa-fa-html5 fa-html5 fa fa-html5" aria-hidden="true"></i></span>
+								<p>Friendly Code</p>
+							</div>
+							<div class="w-descr">
+								<p>Bibendum auctor, nisi elit consequat ipsum, nec sagittis</p>
+							</div>
+
+							<div class="clear">&nbsp;</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="line-straight"></div>
+		</div>
+		<!-- div.testimonials -->
+		<div class="testimonials">
+			<h3 class="main-title">Client Testimonials</h3>
+			<span class="main-subtitle">what clients say about our awesome company</span>
+			<div class="content-testimonials">
+				<img src="public/images/user-thumb.png" alt="Avatar" style="width:200px">
+				<p>
+					Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. <br> Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora.
+				</p>
+				<div class="test-border"></div>
+				<span>
+					John Smith, CEO at
+					<strong>Envato</strong>
+				</span>
+			</div>
+			<!--  -->
+			<div class="content-testimonials">
+				<img src="public/images/user-thumb.png" alt="Avatar" style="width:200px">
+				<p>
+					Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. <br> Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora.
+				</p>
+				<div class="test-border"></div>
+				<span>
+					John Smith, CEO at
+					<strong>Envato</strong>
+				</span>
+			</div>
+			<!--  -->
+			<div class="content-testimonials">
+				<img src="public/images/user-thumb.png" alt="Avatar" style="width:200px">
+				<p>
+					Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. <br> Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora.
+				</p>
+				<div class="test-border"></div>
+				<span>
+					John Smith, CEO at
+					<strong>Envato</strong>
+				</span>
+			</div>
+			<!--  -->
+			<div class="content-testimonials">
+				<img src="public/images/user-thumb.png" alt="Avatar" style="width:200px">
+				<p>
+					Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. <br> Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora.
+				</p>
+				<div class="test-border"></div>
+				<span>
+					John Smith, CEO at
+					<strong>Envato</strong>
+				</span>
+			</div>
+		</div>
+		<!-- so slider hien tai dang trinh chieu-->
+		<div class="button-all" style="text-align:center">
+			<span class="round-button" onclick="currentSlide(0)"></span> 
+			<span class="round-button" onclick="currentSlide(1)"></span> 
+			<span class="round-button" onclick="currentSlide(2)"></span> 
+			<span class="round-button" onclick="currentSlide(3)"></span>
+		</div>
+
+		<!-- founder: Nha sang lap-->
+		<div class="founder" style="height: 800px">
+			<h3 class="main-title">Meet Our Team</h3>
+			<span class="main-subtitle">our cool & professional staff</span>
+			<div class="slide">
+				<div class="row row-founder">
+					<div class="col-md-3 slide-founder">
+						<div class="team-mates">
+							<img src="public/images/h8.jpg" alt="h8">
+						</div>
+						<div class="team-descr">
+							<h3>Mike Williams</h3>
+							<h5>developer</h5>
+						</div>
+						<div class="additionalicons">
+							<a href="#"><i class="fa fa-google-plus"></i></a>
+							<a href="#"><i class="fa fa-twitter"></i></a>
+							<a href="#"><i class="fa fa-dribbble"></i></a>
+							<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						</div>
+					</div>
+					<!--  -->
+					<div class="col-md-3 slide-founder">
+						<div class="team-mates">
+							<img src="public/images/h12.jpg" alt="h12">
+						</div>
+						<div class="team-descr">
+							<h3>John Doe</h3>
+							<h5>developer</h5>
+						</div>
+						<div class="additionalicons">
+							<a href="#"><i class="fa fa-google-plus"></i></a>
+							<a href="#"><i class="fa fa-twitter"></i></a>
+							<a href="#"><i class="fa fa-dribbble"></i></a>
+							<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						</div>
+					</div>
+					<!--  -->
+					<div class="col-md-3 slide-founder">
+						<div class="team-mates">
+							<img src="public/images/h13.jpg" alt="h13">
+						</div>
+						<div class="team-descr">
+							<h3>Vladimir Perzanjak</h3>
+							<h5>developer</h5>
+						</div>
+						<div class="additionalicons">
+							<a href="#"><i class="fa fa-google-plus"></i></a>
+							<a href="#"><i class="fa fa-twitter"></i></a>
+							<a href="#"><i class="fa fa-dribbble"></i></a>
+							<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						</div>
+					</div>
+					<!--  -->
+					<div class="col-md-3 slide-founder">
+						<div class="team-mates">
+							<img src="public/images/h13.jpg" alt="h13">
+						</div>
+						<div class="team-descr">
+							<h3>Smith Armstrong</h3>
+							<h5>developer</h5>
+						</div>
+						<div class="additionalicons">
+							<a href="#"><i class="fa fa-google-plus"></i></a>
+							<a href="#"><i class="fa fa-twitter"></i></a>
+							<a href="#"><i class="fa fa-dribbble"></i></a>
+							<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						</div>
+					</div>
+					<!--  -->
+				</div>
+			</div>	
+			<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+			<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>	
+		</div>
+		<!-- Nut chuyen trang founder-->
+		
+		<!-- recent-posts -->
+		<div class="container">
+			<div class="recent-posts">
+				<h3 class="main-title">Recent Posts</h3>
+				<span class="main-subtitle">fresh news from arkitekt company</span>
+				<div class="row">
+					<div class="col-md-3">
+						<div class="all-text">
+							<div class="img-recent">
+								<img src="public/images/h6.jpg" alt="h6">
+							</div>
+							<div class="paraghrap">
+								<h4>Lorem Ipsum dolor sit</h4>
+								<p>
+									A man who works with his hands <br>is a laborer; a man who works with his hands <br> and his brain is a craftsman; but ...
+								</p>
+							</div>
+							<div class="date-comment">
+								<i class="fa fa-comment" aria-hidden="true"></i>
+								0 comments <br>
+								<i class="fa fa-calendar" aria-hidden="true"></i>
+								October 10, 2015
+							</div>
+						</div>
+					</div>
+					<!--  -->
+					<div class="col-md-3">
+						<div class="all-text">
+							<div class="img-recent">
+								<img src="public/images/h5.jpg" alt="">
+							</div>
+							<div class="paraghrap">
+								<h4>Lorem Ipsum dolor sit</h4>
+								<p>
+									A man who works with his hands <br>is a laborer; a man who works with his hands <br> and his brain is a craftsman; but ...
+								</p>
+							</div>
+							<div class="date-comment">
+								<i class="fa fa-comment" aria-hidden="true"></i>
+								0 comments <br>
+								<i class="fa fa-calendar" aria-hidden="true"></i>
+								October 10, 2015
+							</div>
+						</div>
+					</div>
+					<!--  -->
+					<div class="col-md-3">
+						<div class="all-text">
+							<div class="img-recent">
+								<img src="public/images/h10.jpg" alt="">
+							</div>
+							<div class="paraghrap">
+								<h4>Lorem Ipsum dolor sit</h4>
+								<p>
+									A man who works with his hands <br>is a laborer; a man who works with his hands <br> and his brain is a craftsman; but ...
+								</p>
+							</div>
+							<div class="date-comment">
+								<i class="fa fa-comment" aria-hidden="true"></i>
+								0 comments <br>
+								<i class="fa fa-calendar" aria-hidden="true"></i>
+								October 10, 2015
+							</div>
+						</div>
+					</div>
+					<!--  -->
+					<div class="col-md-3">
+						<div class="all-text">
+							<div class="img-recent">
+								<img src="public/images/h17.jpg" alt="">
+							</div>
+							<div class="paraghrap">
+								<h4>Lorem Ipsum dolor sit</h4>
+								<p>
+									A man who works with his hands <br>is a laborer; a man who works with his hands <br> and his brain is a craftsman; but ...
+								</p>
+							</div>
+							<div class="date-comment">
+								<i class="fa fa-comment" aria-hidden="true"></i>
+								0 comments <br>
+								<i class="fa fa-calendar" aria-hidden="true"></i>
+								October 10, 2015
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+		<!-- Slide show: Chuyen dong phai trai recent-post -->
+		<button class="prev" onclick="plusDivs(-1)"> ❮ </button>
+		<button class="next" onclick="plusDivs(1)"> ❯ </button>
+
+		<!-- icon-info: Thong Tin Lien he -->
+		<div class="icon-information">
+			<div class="triangle">
+				<i class="fa fa-info-circle" aria-hidden="true"></i>
+			</div>
+		</div>
+		<!-- Noi dung thong tin -->
+		<div class="content-information">
+			<p><i class="fa fa-phone" aria-hidden="true"></i><span>9930 1234 5679</span></p>
+			<p><i class="fa fa-envelope" aria-hidden="true"></i><a href="#">contact@domain.com</a></p>
+			<p><i class="fa fa-home" aria-hidden="true"></i><span>street address Ha Noi</span></p>
+			
+		</div>
+
+		<!-- contact-information: Thong Tin Dia Chi -->
+		<div class="contact-imformation">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 content">
+						<img src="public/images/logo2.png" alt="">
+						<p>
+							This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor
+						</p>
+					</div>
+					<div class="col-md-3 content-post">
+						<h3>Recent Post</h3>
+						<ul style="list-style-type: none;">
+							<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i> Lorem Ipsum dolor sit</li>
+							<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i> Lorem Ipsum dolor sit</li>
+							<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i> Lorem Ipsum dolor sit</li>
+							<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i> Lorem Ipsum dolor sit</li>
+							<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i> Lorem Ipsum dolor sit</li>
+						</ul>
+					</div>
+					<div class="col-md-3 content-tags">
+						<h3>Popular Tags</h3>
+						<div class="popular-tags">coding</div>
+						<div class="popular-tags">design</div>
+						<div class="popular-tags">POSTS</div>
+						<br> <br>
+						<div class="popular-tags">Slider</div>
+						<div class="popular-tags">TEAM</div>
+						<div class="popular-tags">WORK</div>
+					</div>
+					<div class="col-md-3 content-signup">
+						<h3>NEWSLETTER SIGNUP</h3>
+						<p>
+							This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+						</p>
+						<div class="form-group">
+							<div class="input-group">
+								<input type="text" name="email" id="email" placeholder="E-mail" class="form-control">
+
+								<span class="input-group-addon btn btn-info" id="btnsubmit">SUBMIT</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- footer: Cuoi trang -->
+		<div id="footer">
+			<div class="container">
+				<div class="wrapper">
+					<div class="copyrigt">&copy 2014 Arkitekt, All Rights Reserved</div>
+					<div id="back-to-top"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></div>
+					<div class="social pull-right">
+						<ul>
+							<li class="icon"><span><i class="fa fa-google-plus"></i></span></li>
+							<li class="icon"><span><i class="icon-twitter"></i></span></li>
+							<li class="icon"><span><i class="icon-pinterest"></i></span></li>
+							<li class="icon"><span><i class="icon-dribbble"></i></span></li>
+							<li class="icon"><span><i class="icon-linkedin-sign"></i></span></li>
+							<li class="icon"><span><i class="icon-facebook"></span></i></li>
+						</ul>
+
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+		<script type="text/javascript" src="public/js/scriptext.js"></script>
+	</body>
+	</html>
